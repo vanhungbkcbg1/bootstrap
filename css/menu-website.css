@@ -1,0 +1,96 @@
+body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin:0;
+    background-color: white;
+}
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #32a0c2;
+    text-align: center;
+}
+.container_header{
+    background-color:#F7F7F7!important ;
+    min-height: 25px;
+}
+.container_header .header{
+
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 2;
+}
+.container{
+    width: 80%;
+}
+
+.logo img{
+    max-height: 83px;
+    max-width: 100%;
+}
+.content-1{
+    float: left;
+}
+.content-2{
+    float: right;
+    margin-top:15px;
+}
+.content-2 ul li{
+   list-style: none;
+    float: left;
+    padding: 10px;
+}
+li.devided{
+    border-left: 1px solid rgba(0,0,0,0.1);
+    height: 30px;
+    vertical-align: middle;
+    position: relative;
+    margin:0 7.5px;
+    top:5px;
+    padding:0px !important;
+}
+.content-2 ul li span{
+    font-size: 20px;
+}
+.content-1 .logo{
+    float: left;
+    margin-top: 10px;
+}
+.content-1 .form-input{
+    float: left;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.main_menu{
+    margin-top:15px;
+    min-height: 35px;
+    background-color: #56289B;
+}
+
+.left_menu{
+    float: left;
+}
+.left_menu ul li{
+    list-style: none;
+    float: left;
+    padding: 10px;
+}
+.left_menu ul li:hover{
+    background-color: #430B99;
+}
+
+.left_menu ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: "Helvetica,Arial,sans-serif", sans-serif;
+}
+.right_menu{
+    float: right;
+}
+

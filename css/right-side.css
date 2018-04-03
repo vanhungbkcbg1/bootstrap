@@ -1,0 +1,39 @@
+.fix_side{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #111;
+    height: 100%;
+    display: block;
+    text-align: center;
+    width: 0;
+    overflow-x: hidden;
+    padding-top:50px;
+    transition: 0.5s;
+
+
+}
+
+.fix_side a{
+    display: block;
+    color: #818181;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 25px;
+    transition: 0.5s;
+}
+.fix_side a:hover{
+    color: #f1f1f1;
+}
+.fix_side a.closebtn{
+    position: absolute;
+    right: 10px;
+    font-size: 36px;
+    top:0px;
+}
+.fix_side a.closebtn:hover{
+    cursor: pointer;
+}
+.show{
+    display: none;
+}
