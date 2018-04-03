@@ -13,26 +13,52 @@
     <div class="form-group">
         <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">@</span>
-            <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+
         </div>
     </div>
     <div class="form-group">
         <div class="input-group">
             <span class="input-group-addon" id="basic-addon2">@</span>
-            <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+            <input type="text" class="form-control required" data-toggle="tooltip" title="Hooray!" placeholder="Username" aria-describedby="basic-addon1">
         </div>
     </div>
 
     <div class="form-group">
         <div class="input-group">
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Go!</button>
-      </span>
-            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+            <button class="btn btn-default" id="btn-save" type="button">Go!</button>
+            </span>
+            <input type="text" class="form-control required" data-toggle="tooltip" title="Hooray!" placeholder="Username" aria-describedby="basic-addon1">
         </div>
         <!-- /input-group -->
     </div>
 </div>
+
+<script>
+
+
+    $(document).on('click','#btn-save', function () {
+
+//        $('[data-toggle="tooltip"]').tooltip('destroy');
+//        $('[data-toggle="tooltip"]').removeAttr('data-original-title');
+//        $('[data-toggle="tooltip"]').removeAttr('data-toggle');
+//
+////
+//        $(".required").each(function () {
+//
+//            if($(this).val()==""){
+//                $(this).tooltip({title:"Required",trigger:"focus"});
+////                $(this).tooltip("show");
+//            }else{
+//                $(this).tooltip("destroy");
+//            }
+//        });
+//        $('[data-toggle="tooltip"]').tooltip({trigger:"focus"});
+        $('[data-toggle="tooltip"]').tooltip("show");
+
+    });
+
+</script>
 
 </body>
 </html>
