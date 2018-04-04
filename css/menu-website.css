@@ -9,7 +9,6 @@ ul li {
 }
 footer{
     padding: 20px;
-    margin-top: 20px;
     color: #ffffff;
     background-color: #32a0c2;
     text-align: center;
@@ -27,9 +26,11 @@ footer{
     line-height: 2;
 }
 .container{
-    width: 80%;
+    width: 90%;
 }
-
+ul{
+    padding: 0px;
+}
 .logo img{
     max-height: 83px;
     max-width: 100%;
@@ -144,8 +145,80 @@ ul.menu_content li:hover{
     float: left;
     padding: 10px;
 }
-@media only screen and (max-width: 1024px) {
-    .right_menu{
+
+/*menu for small device is hidded*/
+.menu_small_device{
+    display: none;
+    min-height: 35px;
+}
+
+.menu_small_device ul li{
+    float: left;
+    width: 40%;
+}
+.side_navigation{
+    position: fixed;
+    width: 0px;
+    top: 0px;
+    height: 100%;
+    left: 0px;
+    background-color: #122b40;
+    z-index: 999;
+    padding-top: 30px;
+    transition: 0.5s;
+    overflow: hidden;
+
+
+}
+.closebtn{
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    font-size: 30px;
+    color: #818181;
+    text-decoration: none;
+}
+a.closebtn:hover{
+    color: white !important;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+.side_navigation ul li{
+    display: block;
+    width: 100%;
+    padding: 10px;
+
+}
+.side_navigation ul li:hover{
+    background-color: #5e5e5e;
+    cursor: pointer;
+}
+.side_navigation ul li a{
+    color: white;
+}
+@media only screen and (max-width: 768px) {
+    .main_menu{
         display: none;
     }
+    .header-2{
+        display: none;
+    }
+    .menu_small_device{
+        display: block;
+    }
+    .logo{
+        height: 32px;
+        width: 142px;
+    }
+    .menu_small_device ul li:first-child{
+        height: 100%;
+        padding:10px 5px;
+
+    }
+
 }
+/*for medium devices destops*/
+@media screen and (max-width: 992px) and (min-width: 768px) {
+
+}
+
