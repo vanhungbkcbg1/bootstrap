@@ -4,6 +4,9 @@ body{
     margin:0;
     background-color: white;
 }
+ul li {
+    list-style: none;
+}
 footer{
     padding: 20px;
     margin-top: 20px;
@@ -73,16 +76,55 @@ li.devided{
 .left_menu{
     float: left;
 }
-.left_menu ul li{
+.left_menu ul>li{
     list-style: none;
     float: left;
     padding: 10px;
 }
-.left_menu ul li:hover{
+.left_menu ul>li:hover{
     background-color: #430B99;
 }
+.left_menu ul li.has-child{
+    position: relative;
+}
 
-.left_menu ul li a{
+.left_menu ul li.has-child:hover .menu_content{
+    display: block;
+}
+
+.menu_content{
+    display: none;
+    min-width: 250px;
+    background: #FFFFFF;
+    position: absolute;
+    padding-left: 0px;
+    left: -10px;
+    top:42px;
+    z-index: 1000;
+}
+.menu_content:after{
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    border: 20px solid transparent;
+    border-bottom-color: red;
+
+}
+ul.menu_content li{
+    display: block;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+ul.menu_content li a{
+    color: black !important;
+}
+ul.menu_content li:hover{
+    background-color: #F7F7F7;
+}
+
+.main_menu ul li a{
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -93,4 +135,17 @@ li.devided{
 .right_menu{
     float: right;
 }
+.main_menu  ul li{
+    list-style: none;
+}
 
+.right_menu ul li{
+    list-style: none;
+    float: left;
+    padding: 10px;
+}
+@media only screen and (max-width: 1024px) {
+    .right_menu{
+        display: none;
+    }
+}
